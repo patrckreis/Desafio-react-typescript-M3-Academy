@@ -1,0 +1,29 @@
+.headerMenu {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-color: #000000;
+  height: 44px;
+  gap: 55px;
+}
+
+.headerMenuSpan {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.headerMenuSpan1 {
+  margin-left: 100px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: white;
+}
