@@ -12,13 +12,13 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
+  width: 1077px;
   /* width: 78.13%; */
 }
 
-.headerLogo {
+/* .headerLogo {
   margin-left: 100px;
-}
+} */
 
 .headerSearch {
   display: flex;
@@ -31,9 +31,10 @@
 }
 
 .headerSearchPlaceholder {
+  box-sizing: border-box;
   padding-left: 16px;
-  width: 242px;
-  height: 26px;
+  width: 264px;
+  height: 32px;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -46,7 +47,7 @@
 .headerSafebuy {
   display: flex;
   align-items: center;
-  margin-right: 100px;
+  /* margin-right: 100px; */
   gap: 55px;
 }
 
