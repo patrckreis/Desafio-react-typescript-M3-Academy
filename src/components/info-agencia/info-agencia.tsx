@@ -35,23 +35,23 @@ export function InfoAgencia() {
         <div className={style.socialMediaIconsContainer}>
           <a href="https://www.google.com.br/">
             {" "}
-            <img className={style.socialIcons} src={facebook}></img>
+            <img className={style.socialIcons} src={facebook} alt=""></img>
           </a>
           <a href="https://www.google.com.br/">
             {" "}
-            <img className={style.socialIcons} src={instagram}></img>
+            <img className={style.socialIcons} src={instagram} alt=""></img>
           </a>
           <a href="https://www.google.com.br/">
             {" "}
-            <img className={style.socialIcons} src={twitter}></img>
+            <img className={style.socialIcons} src={twitter} alt=""></img>
           </a>
           <a href="https://www.google.com.br/">
             {" "}
-            <img className={style.socialIcons} src={youtube}></img>
+            <img className={style.socialIcons} src={youtube} alt=""></img>
           </a>
           <a href="https://www.google.com.br/">
             {" "}
-            <img className={style.socialIcons} src={linkedin}></img>
+            <img className={style.socialIcons} src={linkedin} alt=""></img>
           </a>
         </div>
         <span>www.loremipsum.com</span>

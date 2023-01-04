@@ -1,0 +1,23 @@
+.MainContainer {
+  display: flex;
+  padding: 100px;
+  justify-content: center;
+}
+
+.NavContainer {
+  width: 302px;
+  display: flex;
+  flex-direction: column;
+  /* width: 100%; */
+  gap: 20px;
+  border-right: 1px solid #000000;
+  height: 285px;
+}
+
+.NavContainer span {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #7d7d7d;
+}

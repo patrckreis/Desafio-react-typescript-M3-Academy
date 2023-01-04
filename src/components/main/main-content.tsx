@@ -1,4 +1,5 @@
-import { Form } from "../form/form";
+import style from "./main-content.module.css";
+import { CustomForm } from "../form/custom-form";
 import { useState } from "react";
 
 export function MainContent() {
@@ -11,29 +12,29 @@ export function MainContent() {
     {
       name: "Forma de pagamento",
       content:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     },
     {
       name: "Entrega",
       content:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
     },
     {
       name: "Troca de Devolução",
       content:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
     },
     {
       name: "Segurança e Privacidade",
       content:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.",
     },
-    { name: "Contato", content: <Form /> },
+    { name: "Contato", content: <CustomForm /> },
   ];
   const [content, setContent] = useState<string | JSX.Element>(arr[2].content);
   return (
-    <div className="headerTeste">
-      <nav>
+    <div className={style.MainContainer}>
+      <nav className={style.NavContainer}>
         {arr.map((item) => {
           return (
             <span
