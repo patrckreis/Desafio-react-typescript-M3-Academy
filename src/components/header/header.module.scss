@@ -8,17 +8,17 @@
   height: 76px;
 }
 
+.headerMainContainer {
+  width: 2500px;
+  max-width: 100%;
+}
+
 .headerContainer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 1077px;
-  /* width: 78.13%; */
+  margin: 0 100px 0 100px;
 }
-
-/* .headerLogo {
-  margin-left: 100px;
-} */
 
 .headerSearch {
   display: flex;

@@ -1,4 +1,4 @@
-import style from "./info-agencia.module.css";
+import style from "./info-agencia.module.scss";
 import facebook from "./assets/facebook.png";
 import instagram from "./assets/instagram.png";
 import twitter from "./assets/twitter.png";
@@ -55,6 +55,9 @@ export function InfoAgencia() {
           </a>
         </div>
         <span>www.loremipsum.com</span>
+        {/* <div>
+          <img src={youtube} alt="" />
+        </div> */}
       </div>
     </div>
   );

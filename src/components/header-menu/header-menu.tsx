@@ -1,4 +1,4 @@
-import style from "./header-menu.module.css";
+import style from "./header-menu.module.scss";
 export function HeaderMenu() {
   return (
     <div className={style.headerMenu}>

@@ -1,4 +1,4 @@
-import style from "./main-content.module.css";
+import style from "./main-content.module.scss";
 import { CustomForm } from "../form/custom-form";
 import { useState } from "react";
 

@@ -1,4 +1,4 @@
-import style from "./custom-form.module.css";
+import style from "./custom-form.module.scss";
 import { Formik, Form, Field, ErrorMessage, FormikHelpers } from "formik";
 import { string } from "yup";
 

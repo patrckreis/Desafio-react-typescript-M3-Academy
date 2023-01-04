@@ -1,3 +1,5 @@
+import style from "./footer.module.scss";
+
 import boleto from "./assets/Boleto.png";
 import diners from "./assets/Diners.png";
 import elo from "./assets/Elo.png";
@@ -9,8 +11,6 @@ import visa from "./assets/Visa.png";
 import vtexPci from "./assets/vtex-pci.png";
 import vtex from "./assets/vtex.png";
 import line from "./assets/Line.png";
-
-import style from "./footer.module.css";
 
 export function Footer() {
   return (
