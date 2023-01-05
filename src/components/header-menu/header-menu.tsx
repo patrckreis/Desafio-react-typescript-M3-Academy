@@ -2,15 +2,11 @@ import style from "./header-menu.module.scss";
 export function HeaderMenu() {
   return (
     <div className={style.headerMenu}>
-      <a href="/cursos" className={style.headerMenuSpan1}>
-        CURSOS
-      </a>
-      <a href="/saiba-mais" className={style.headerMenuSpan}>
-        SAIBA MAIS
-      </a>
-      <a href="/institucionais" className={style.headerMenuSpan}>
-        INSTITUCIONAIS
-      </a>
+      <div className={style.headerMenuContainer}>
+        <a href="/cursos">CURSOS</a>
+        <a href="/saiba-mais">SAIBA MAIS</a>
+        <a href="/institucionais">INSTITUCIONAIS</a>
+      </div>
     </div>
   );
 }

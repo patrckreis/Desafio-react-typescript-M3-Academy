@@ -8,19 +8,15 @@ export function Header() {
     <header className={style.header}>
       <div className={style.headerMainContainer}>
         <div className={style.headerContainer}>
-          <div className={style.headerLogo}>
+          <div className={style.headerLogoContainer}>
             <img src={logoM3} alt="" />
           </div>
           <div className={style.headerSearch}>
-            <input
-              type="text"
-              placeholder="Buscar..."
-              className={style.headerSearchPlaceholder}
-            />
+            <input type="text" placeholder="Buscar..." />
             <img className={style.searchIcon} src={searchIcon} alt="" />
           </div>
           <div className={style.headerSafebuy}>
-            <span className={style.safeBuySpan}>ENTRAR</span>
+            <span>ENTRAR</span>
             <img src={cartBuy} alt="" />
           </div>
         </div>

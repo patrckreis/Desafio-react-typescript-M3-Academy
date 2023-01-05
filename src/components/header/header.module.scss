@@ -6,56 +6,92 @@
   background-color: black;
   width: 100%;
   height: 76px;
-}
-
-.headerMainContainer {
-  width: 2500px;
-  max-width: 100%;
-}
-
-.headerContainer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 0 100px 0 100px;
-}
-
-.headerSearch {
-  display: flex;
-  align-items: center;
-}
-
-.searchIcon {
-  position: relative;
-  right: 34px;
-}
-
-.headerSearchPlaceholder {
   box-sizing: border-box;
-  padding-left: 16px;
-  width: 264px;
-  height: 32px;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  border: 2px solid #f2f2f2;
-  border-radius: 5px;
-  color: #c6c6c6;
-}
+  @media (min-width: 280px) and (max-width: 1024px) {
+    display: none;
+  }
+  @media (min-width: 2500px) {
+    height: 101px;
+  }
 
-.headerSafebuy {
-  display: flex;
-  align-items: center;
-  /* margin-right: 100px; */
-  gap: 55px;
-}
+  .headerMainContainer {
+    width: 100%;
+    max-width: 100%;
 
-.safeBuySpan {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 16px;
-  color: #ffffff;
+    .headerContainer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 0 100px 0 100px;
+
+      .headerLogoContainer img {
+        @media (min-width: 2500px) {
+          width: 265.62px;
+          height: 50.5px;
+        }
+      }
+
+      .headerSearch {
+        display: flex;
+        align-items: center;
+
+        & input {
+          box-sizing: border-box;
+          padding-left: 16px;
+          width: 264px;
+          height: 32px;
+          font-family: "Roboto";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          border: 2px solid #f2f2f2;
+          border-radius: 5px;
+          color: #c6c6c6;
+
+          @media (min-width: 2500px) {
+            width: 516px;
+            height: 57px;
+            font-size: 28px;
+          }
+        }
+
+        & img {
+          position: relative;
+          right: 34px;
+
+          @media (min-width: 2500px) {
+            width: 35px;
+            height: 35px;
+            right: 55px;
+          }
+        }
+      }
+    }
+
+    .headerSafebuy {
+      display: flex;
+      align-items: center;
+      gap: 55px;
+
+      & span {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        color: #ffffff;
+
+        @media (min-width: 2500px) {
+          font-size: 28px;
+        }
+      }
+
+      & img {
+        @media (min-width: 2500px) {
+          width: 55px;
+          height: 55px;
+        }
+      }
+    }
+  }
 }
