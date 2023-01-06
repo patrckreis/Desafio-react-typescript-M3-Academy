@@ -1,15 +1,11 @@
-import style from "./newsletter.module.css";
+import style from "./newsletter.module.scss";
 export function Newsletter() {
   return (
-    <div className={style.newsLetterContainer}>
-      <div>
-        <h2 className={style.newsLetterTitle}>ASSINE NOSSA NEWSLETTER</h2>
-        <input
-          className={style.newsLetterPlaceholder}
-          type="text"
-          placeholder="E-mail"
-        />
-        <button className={style.newsLetterButton}>ENVIAR</button>
+    <div className={style.newsLetter}>
+      <div className={style.newsLetterContainer}>
+        <h2>ASSINE NOSSA NEWSLETTER</h2>
+        <input type="text" placeholder="E-mail" />
+        <button>ENVIAR</button>
       </div>
     </div>
   );

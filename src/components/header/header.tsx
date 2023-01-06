@@ -13,7 +13,10 @@ export function Header() {
           </div>
           <div className={style.headerSearch}>
             <input type="text" placeholder="Buscar..." />
-            <img className={style.searchIcon} src={searchIcon} alt="" />
+            <a href="/">
+              {" "}
+              <img className={style.socialIcons} src={searchIcon} alt=""></img>
+            </a>
           </div>
           <div className={style.headerSafebuy}>
             <span>ENTRAR</span>
