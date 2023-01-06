@@ -18,9 +18,6 @@
 
   .newsLetterContainer button:active {
     filter: brightness(80%);
-    /* & :active {
-      background-color: #ffffff;
-    } */
   }
   .newsLetterContainer {
     @media (min-width: 280px) and (max-width: 1024px) {
