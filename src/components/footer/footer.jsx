@@ -15,29 +15,31 @@ import line from "./assets/Line.png";
 export function Footer() {
   return (
     <div className={style.footer}>
-      <div className={style.footerContainer}>
-        <div className={style.footerSpanContainer}>
-          <span>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor
-          </span>
-        </div>
-        <div className={style.footerCardIconsContainer}>
-          <img src={master} alt="" />
-          <img src={visa} alt="" />
-          <img src={diners} alt="" />
-          <img src={elo} alt="" />
-          <img src={hiper} alt="" />
-          <img src={pagseguro} alt="" />
-          <img src={boleto} alt="" />
-          <img src={line} alt="" />
-          <img src={vtexPci} alt="" />
-        </div>
-        <div className={style.PdDbContainer}>
-          <span>Powered By</span>
-          <img src={vtex} alt="" />
-          <span>Developed By</span>
-          <img src={m3} alt="" />
+      <div className={style.footerMainContainer}>
+        <div className={style.footerContainer}>
+          <div className={style.footerSpanContainer}>
+            <span>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor
+            </span>
+          </div>
+          <div className={style.footerCardIconsContainer}>
+            <img src={master} alt="" />
+            <img src={visa} alt="" />
+            <img src={diners} alt="" />
+            <img src={elo} alt="" />
+            <img src={hiper} alt="" />
+            <img src={pagseguro} alt="" />
+            <img src={boleto} alt="" />
+            <img src={line} alt="" />
+            <img src={vtexPci} className={style.Pci} alt="" />
+          </div>
+          <div className={style.PdDbContainer}>
+            <span>Powered By</span>
+            <img src={vtex} alt="" />
+            <span>Developed By</span>
+            <img src={m3} alt="" />
+          </div>
         </div>
       </div>
     </div>
