@@ -31,7 +31,7 @@ export function MainContent() {
     },
     { name: "Contato", content: <CustomForm /> },
   ];
-  const [content, setContent] = useState<string | JSX.Element>(arr[2].content);
+  const [content, setContent] = useState<string | JSX.Element>(arr[0].content);
   return (
     <div className={style.MainContainer}>
       <nav className={style.NavContainer}>
