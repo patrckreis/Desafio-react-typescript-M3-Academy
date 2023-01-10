@@ -1,23 +1,42 @@
-.MainContainer {
-  display: flex;
-  padding: 100px;
+.institutional {
   justify-content: center;
-}
+  width: 100%;
 
-.NavContainer {
-  width: 302px;
-  display: flex;
-  flex-direction: column;
-  /* width: 100%; */
-  gap: 20px;
-  border-right: 1px solid #000000;
-  height: 285px;
-}
+  .institutionalTitle {
+    text-align: center;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    margin: 0;
+  }
 
-.NavContainer span {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  color: #7d7d7d;
+  .institutionalContainer {
+    width: 100%;
+    max-width: 100%;
+
+    .institutionalMainContainer {
+      display: flex;
+      margin: 80px 100px;
+
+      .InstitutionalNavContainer {
+        width: 302px;
+        display: flex;
+        flex-direction: column;
+        border-right: 1px solid #000000;
+        height: 285px;
+
+        .NavSpan {
+          padding: 10px 16px;
+          font-family: "Roboto";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          color: #7d7d7d;
+          cursor: pointer;
+        }
+      }
+    }
+  }
 }

@@ -27,11 +27,11 @@ export function InfoAgencia() {
               <li>Dúvidas Frequentes</li>
             </ul>
             <ul className={style.institucionalInfosUl}>
-              <li className={style.infoAgenciaName}>INSTITUCIONAL</li>
+              <li className={style.infoAgenciaName}>FALE CONOSCO</li>
               <li>Atendimento ao Consumidor</li>
-              <li>Política de privacidade</li>
-              <li>Segurança</li>
-              <li>Seja um revendedor</li>
+              <li>(11) 4159-9504</li>
+              <li>Atendimento Online</li>
+              <li>(11) 99433-8825</li>
             </ul>
           </div>
           <div className={style.socialMedia}>

@@ -48,6 +48,10 @@
           border-radius: 5px;
           color: #c6c6c6;
 
+          &::placeholder {
+            color: #c6c6c6;
+          }
+
           @media (min-width: 2500px) {
             width: 516px;
             height: 57px;
