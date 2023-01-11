@@ -1,0 +1,57 @@
+.accordion {
+  display: flex;
+  margin: 24px 16px;
+  gap: 12px;
+  flex-direction: column;
+  @media (min-width: 1151px) {
+    display: none;
+  }
+
+  .accordionContainer {
+    background-color: #ffffff;
+    border: none;
+    padding: 0;
+    .accordionDiv {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      & img {
+        height: 8px;
+      }
+
+      & span {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        color: #303030;
+      }
+    }
+  }
+}
+.socialIconsMobile {
+  display: flex;
+  gap: 12px;
+  & img {
+    height: 35px;
+  }
+
+  & span {
+    display: flex;
+    gap: 10px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #303030;
+  }
+}
+.accordionLi {
+  & li {
+    list-style: none;
+    margin: 12px 0 12px 0;
+  }
+}
