@@ -28,7 +28,9 @@ export const InfoAgenciaMobile = () => {
             <li>Quem somos</li>
             <li>Política de Privacidade</li>
             <li>Segurança</li>
-            <li>Seja um Revendedor</li>
+            <li className={style.institucionalInfosMobileUnderline}>
+              Seja um Revendedor
+            </li>
           </div>
         </AccordionBody>
       </AccordionItem>
@@ -46,7 +48,9 @@ export const InfoAgenciaMobile = () => {
             <li>Entrega</li>
             <li>Pagamento</li>
             <li>Trocas e Devoluções</li>
-            <li>Dúvidas Frequentes</li>
+            <li className={style.institucionalInfosMobileUnderline}>
+              Dúvidas Frequentes
+            </li>
           </div>
         </AccordionBody>
       </AccordionItem>
@@ -63,7 +67,9 @@ export const InfoAgenciaMobile = () => {
             <li>Atendimento ao Consumidor</li>
             <li>(11) 4159-9504</li>
             <li>Atendimento Online</li>
-            <li>(11) 99433-8825</li>
+            <li className={style.institucionalInfosMobileUnderline}>
+              (11) 99433-8825
+            </li>
           </div>
         </AccordionBody>
       </AccordionItem>

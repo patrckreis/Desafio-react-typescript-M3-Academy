@@ -17,21 +17,28 @@ export function InfoAgencia() {
               <li>Quem somos</li>
               <li>Política de Privacidade</li>
               <li>Segurança</li>
-              <li>Seja um Revendedor</li>
+              <li className={style.institucionalInfosUnderline}>
+                Seja um Revendedor
+              </li>
             </ul>
             <ul className={style.institucionalInfosUl}>
               <li className={style.infoAgenciaName}>DÚVIDAS</li>
               <li>Entrega</li>
               <li>Pagamento</li>
               <li>Trocas e Devoluções</li>
-              <li>Dúvidas Frequentes</li>
+              <li className={style.institucionalInfosUnderline}>
+                {" "}
+                Dúvidas Frequentes
+              </li>
             </ul>
             <ul className={style.institucionalInfosUl}>
               <li className={style.infoAgenciaName}>FALE CONOSCO</li>
               <li>Atendimento ao Consumidor</li>
               <li>(11) 4159-9504</li>
               <li>Atendimento Online</li>
-              <li>(11) 99433-8825</li>
+              <li className={style.institucionalInfosUnderline}>
+                (11) 99433-8825
+              </li>
             </ul>
           </div>
           <div className={style.socialMedia}>

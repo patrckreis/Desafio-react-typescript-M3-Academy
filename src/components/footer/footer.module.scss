@@ -73,6 +73,10 @@
             height: 28px;
           }
 
+          @media (max-width: 360px) {
+            height: 20px;
+          }
+
           @media (min-width: 2500px) {
             height: 66px;
           }
@@ -80,6 +84,9 @@
         & img {
           @media (min-width: 280px) and (max-width: 1150px) {
             height: 17px;
+          }
+          @media (max-width: 360px) {
+            height: 11px;
           }
 
           @media (min-width: 2500px) {
