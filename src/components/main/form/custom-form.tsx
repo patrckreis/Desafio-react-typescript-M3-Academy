@@ -1,6 +1,7 @@
 import style from "./custom-form.module.scss";
 import { Formik, Form, Field, ErrorMessage, FormikHelpers } from "formik";
 import Formschema from "./schema/Formschema";
+import { useState } from "react";
 
 const initialValues = {
   Nome: "",
@@ -9,6 +10,7 @@ const initialValues = {
   Nascimento: "",
   Telefone: "",
   Instagram: "",
+  Accept: false,
 };
 
 interface IformikValues {
@@ -18,10 +20,13 @@ interface IformikValues {
   Nascimento: string;
   Telefone: string;
   Instagram: string;
+  Accept: boolean;
 }
 
 export function CustomForm() {
-  const handleFormikSubmit = (values: IformikValues) => {
+  const [success, setSuccess] = useState(false);
+  const HandleFormikSubmit = (values: IformikValues) => {
+    setSuccess(true);
     console.log(values);
   };
   return (
@@ -29,9 +34,12 @@ export function CustomForm() {
       <div className={style.CustomFormContainer}>
         <h1>Preencha o formulário</h1>
         <Formik
-          onSubmit={handleFormikSubmit}
-          initialValues={initialValues}
           validationSchema={Formschema}
+          onSubmit={(values, { resetForm }) => {
+            HandleFormikSubmit(values);
+            resetForm();
+          }}
+          initialValues={initialValues}
         >
           <Form>
             <div className={style.FormCol}>
@@ -119,7 +127,6 @@ export function CustomForm() {
                   className={style.formInvalidFeedback}
                 />
               </div>
-
               <Field
                 placeholder="(00) 00000-0000"
                 className={style.FormField}
@@ -128,7 +135,7 @@ export function CustomForm() {
               />
             </div>
             <div className={style.FormCol}>
-              <label className={style.FormLabel} htmlFor="Instagram">
+              <label className={style.FormLabelInsta} htmlFor="Instagram">
                 Instagram
               </label>
               <Field
@@ -138,10 +145,19 @@ export function CustomForm() {
                 name="Instagram"
               />
             </div>
-            {/* <button>Declaro que li e aceito</button> */}
+            <div>
+              <ErrorMessage
+                component="span"
+                name="Accept"
+                className={style.formInvalidFeedback}
+              />
+              <label>Declaro que li e aceito</label>
+              <Field id="Accept" name="Accept" type="checkbox" />
+            </div>
             <button className={style.FormSubmitButton} type="submit">
               CADASTRE-SE
             </button>
+            {success && <span>* Formulário enviado com sucesso.</span>}
           </Form>
         </Formik>
       </div>

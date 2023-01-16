@@ -1,0 +1,23 @@
+.buttonsContainer {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  bottom: 189px;
+  right: 16px;
+  gap: 5px;
+
+  .wppLink {
+    cursor: pointer;
+    height: 34px;
+    & img {
+      height: 100%;
+    }
+  }
+  .topButton {
+    background: none;
+    border: 0;
+    padding: 0;
+    outline: 0;
+    cursor: pointer;
+  }
+}

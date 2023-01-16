@@ -17,6 +17,7 @@ export default Yup.object().shape({
   Nascimento: Yup.date().required("*Campo Obrigatório"),
   /* .min(new Date(), "Não é possível incluir uma data que já passou.") */
   Telefone: Yup.string()
-    .phone("Número de telefone inválido")
-    .required("*Campo Obrigatório"),
+    .required("*Campo Obrigatório")
+    .phone(undefined, false, "Número de telefone inválido"),
+  Accept: Yup.boolean().oneOf([true], "*"),
 });

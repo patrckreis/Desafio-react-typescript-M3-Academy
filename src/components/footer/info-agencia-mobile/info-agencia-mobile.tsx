@@ -1,10 +1,10 @@
 import style from "./info-agencia-mobile.module.scss";
 import plus from "./assets/plus.png";
-import facebook from "../../info-agencia/assets/facebook.png";
-import instagram from "../../info-agencia/assets/instagram.png";
-import linkedin from "../../info-agencia/assets/linkedin.png";
-import twitter from "../../info-agencia/assets/twitter.png";
-import youtube from "../../info-agencia/assets/youtube.png";
+import facebook from "../assets/assets-info-agencia/facebook.png";
+import instagram from "../assets/assets-info-agencia/instagram.png";
+import twitter from "../assets/assets-info-agencia/twitter.png";
+import linkedin from "../assets/assets-info-agencia/linkedin.png";
+import youtube from "../assets/assets-info-agencia/youtube.png";
 
 import {
   Accordion,

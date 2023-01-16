@@ -1,10 +1,10 @@
 import style from "./info-agencia.module.scss";
 
-import facebook from "./assets/facebook.png";
-import instagram from "./assets/instagram.png";
-import twitter from "./assets/twitter.png";
-import linkedin from "./assets/linkedin.png";
-import youtube from "./assets/youtube.png";
+import facebook from "../assets/assets-info-agencia/facebook.png";
+import instagram from "../assets/assets-info-agencia/instagram.png";
+import twitter from "../assets/assets-info-agencia/twitter.png";
+import linkedin from "../assets/assets-info-agencia/linkedin.png";
+import youtube from "../assets/assets-info-agencia/youtube.png";
 
 export function InfoAgencia() {
   return (

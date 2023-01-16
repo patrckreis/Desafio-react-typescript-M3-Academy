@@ -1,6 +1,6 @@
 import style from "./footer.module.scss";
 
-import { InfoAgencia } from "../info-agencia/info-agencia";
+import { InfoAgencia } from "./info-agencia/info-agencia";
 import { Newsletter } from "../newsletter/newsletter";
 import { InfoAgenciaMobile } from "./info-agencia-mobile/info-agencia-mobile";
 
