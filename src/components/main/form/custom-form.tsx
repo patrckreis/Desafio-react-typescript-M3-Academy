@@ -32,7 +32,7 @@ export function CustomForm() {
   return (
     <div className={style.CustomForm}>
       <div className={style.CustomFormContainer}>
-        <h1>Preencha o formulário</h1>
+        <h2>Preencha o formulário</h2>
         <Formik
           validationSchema={Formschema}
           onSubmit={(values, { resetForm }) => {
@@ -145,11 +145,11 @@ export function CustomForm() {
                 name="Instagram"
               />
             </div>
-            <div>
+            <div className={style.formInvalidFeedback}>
               <ErrorMessage
                 component="span"
                 name="Accept"
-                className={style.formInvalidFeedback}
+                className={style.formInvalidSpan}
               />
               <label>Declaro que li e aceito</label>
               <Field id="Accept" name="Accept" type="checkbox" />
@@ -157,7 +157,11 @@ export function CustomForm() {
             <button className={style.FormSubmitButton} type="submit">
               CADASTRE-SE
             </button>
-            {success && <span>* Formulário enviado com sucesso.</span>}
+            {success && (
+              <span className={style.successSubmit}>
+                * Formulário enviado com sucesso.
+              </span>
+            )}
           </Form>
         </Formik>
       </div>

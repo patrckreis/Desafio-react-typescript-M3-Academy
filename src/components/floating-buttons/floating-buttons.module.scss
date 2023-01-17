@@ -6,11 +6,27 @@
   right: 16px;
   gap: 5px;
 
+  @media (max-width: 375px) {
+    bottom: 29px;
+  }
+
+  @media (max-width: 1024px) {
+    bottom: 51px;
+  }
+
+  @media (min-width: 2500px) {
+    bottom: 229px;
+  }
+
   .wppLink {
     cursor: pointer;
     height: 34px;
     & img {
       height: 100%;
+    }
+
+    @media (min-width: 2500px) {
+      height: 66px;
     }
   }
   .topButton {
@@ -19,5 +35,11 @@
     padding: 0;
     outline: 0;
     cursor: pointer;
+
+    & img {
+      @media (min-width: 2500px) {
+        height: 66px;
+      }
+    }
   }
 }

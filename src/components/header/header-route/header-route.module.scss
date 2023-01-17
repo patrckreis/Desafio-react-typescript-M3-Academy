@@ -7,6 +7,10 @@
     margin: 30px 100px;
     gap: 10px;
 
+    @media (max-width: 1024px) and (min-width: 280px) {
+      margin: 30px 16px;
+    }
+
     .home {
       height: 16px;
 

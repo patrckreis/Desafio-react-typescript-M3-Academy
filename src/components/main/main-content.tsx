@@ -77,8 +77,6 @@ export function MainContent() {
                   <span
                     className={style.NavSpan}
                     style={{
-                      /* position: "fixed",
-                      bottom: "20px", */
                       color: selectedItem === item.name ? "white" : "#7D7D7D",
                       backgroundColor:
                         selectedItem === item.name ? "black" : "white",

@@ -4,7 +4,11 @@
   .CustomFormContainer {
     margin-left: 30px;
 
-    & h1 {
+    @media (max-width: 1024px) and (min-width: 280px) {
+      margin: 0;
+    }
+
+    & h2 {
       font-family: "Roboto";
       font-style: normal;
       font-weight: 700;
@@ -12,12 +16,21 @@
       line-height: 28px;
       color: #000000;
       margin: 0;
+
+      @media (max-width: 1024px) and (min-width: 280px) {
+        text-align: center;
+        margin-top: 12px;
+      }
+
+      @media (min-width: 2500px) {
+        font-size: 48px;
+        line-height: 56px;
+      }
     }
 
     .FormCol {
       display: flex;
       flex-direction: column;
-      margin-bottom: 12px;
 
       & span {
         font-family: "Roboto";
@@ -26,6 +39,13 @@
         font-size: 12px;
         line-height: 14px;
         color: #ff0000;
+        margin: 0;
+
+        @media (min-width: 2500px) {
+          font-size: 24px;
+          line-height: 28px;
+          margin: 0;
+        }
       }
 
       .FormLabelInsta {
@@ -35,23 +55,43 @@
         font-weight: 400;
         font-size: 14px;
         color: #100d0e;
+
+        @media (min-width: 2500px) {
+          font-size: 28px;
+          line-height: 33px;
+        }
       }
 
       .FormField {
+        font-weight: 400;
+        font-family: "Roboto";
+        font-style: normal;
         height: 46px;
         border: 1px solid #100d0e;
         border-radius: 25px;
         padding: 15px 20px 15px;
         box-sizing: border-box;
+
+        @media (min-width: 2500px) {
+          height: 63px;
+          font-size: 28px;
+          line-height: 33px;
+        }
       }
 
       .FormLabel {
+        line-height: 16px;
         margin: 12px 0 12px 0;
         font-family: "Roboto";
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
         color: #100d0e;
+
+        @media (min-width: 2500px) {
+          font-size: 28px;
+          line-height: 33px;
+        }
       }
     }
   }
@@ -66,6 +106,13 @@
     font-weight: 400;
     font-size: 16px;
     color: white;
+    line-height: 19px;
+
+    @media (min-width: 2500px) {
+      height: 71px;
+      font-size: 32px;
+      line-height: 38px;
+    }
   }
 
   .FormSubmitButton :hover {
@@ -78,4 +125,60 @@
   justify-content: space-between;
   align-items: flex-end;
   margin: 0 18px 0;
+}
+
+.formInvalidFeedback {
+  display: flex;
+  justify-content: center;
+  margin: 12px 0 12px 0;
+  align-items: center;
+
+  & label {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #100d0e;
+    text-decoration: underline;
+
+    @media (min-width: 2500px) {
+      font-size: 28px;
+      line-height: 33px;
+    }
+  }
+
+  & span {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #ff0000;
+
+    @media (min-width: 2500px) {
+      font-size: 28px;
+      line-height: 33px;
+    }
+  }
+
+  & input {
+    width: 18px;
+    height: 18px;
+
+    @media (min-width: 2500px) {
+      width: 36px;
+      height: 35px;
+    }
+  }
+}
+
+.successSubmit {
+  margin-top: 12px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #008000;
 }
