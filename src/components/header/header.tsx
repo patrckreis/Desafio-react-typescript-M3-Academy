@@ -1,5 +1,8 @@
 import { HeaderMenu } from "./header-menu/header-menu";
 import { HeaderRoute } from "./header-route/header-route";
+import { HeaderHamburger } from "./header-hamburger/header-hamburger";
+import { MenuAberto } from "./header-hamburger/menu-aberto";
+import { useState } from "react";
 
 import style from "./header.module.scss";
 import logoM3 from "./assets/logo.png";
@@ -7,6 +10,7 @@ import cartBuy from "./assets/cart1.png";
 import searchIcon from "./assets/lupa.png";
 
 export function Header() {
+  const [openModal, setOpenModal] = useState(false);
   return (
     <>
       <header className={style.header}>
@@ -33,6 +37,11 @@ export function Header() {
           </div>
         </div>
       </header>
+      <HeaderHamburger openModal={() => setOpenModal(true)} />
+      <MenuAberto
+        isOpen={openModal}
+        onRequestClose={() => setOpenModal(false)}
+      />
       <HeaderMenu />
       <HeaderRoute />
     </>

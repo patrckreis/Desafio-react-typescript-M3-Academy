@@ -1,0 +1,48 @@
+.headerHamburger {
+  height: 139px;
+  width: 100%;
+  background-color: black;
+
+  @media (min-width: 1025px) {
+    display: none;
+  }
+  .headerHamburgerTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 16px 30px 16px;
+
+    .btnModal {
+      background: none;
+      border: none;
+    }
+  }
+  .headerHamburgerPlaceholder {
+    padding: 0 16px 0 16px;
+
+    .lupaIcon {
+      /* position: relative;
+      left: 955px;
+      top: -27px; */
+    }
+
+    & input {
+      width: 100%;
+      box-sizing: border-box;
+      background: #ffffff;
+      border: 2px solid #f0f0f0;
+      border-radius: 5px;
+      height: 36px;
+      padding: 10px 16px;
+
+      &::placeholder {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        color: #c4c4c4;
+      }
+    }
+  }
+}
