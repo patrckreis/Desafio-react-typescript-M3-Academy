@@ -16,6 +16,7 @@
     "react-dom": "^18.2.0",
     "react-headless-accordion": "^1.0.2",
     "react-modal": "^3.16.1",
+    "react-router-dom": "^6.7.0",
     "react-scripts": "5.0.1",
     "sass": "^1.57.1",
     "scss": "^0.2.4",
