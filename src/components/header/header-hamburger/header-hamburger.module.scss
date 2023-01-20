@@ -18,12 +18,13 @@
     }
   }
   .headerHamburgerPlaceholder {
+    position: relative;
     padding: 0 16px 0 16px;
 
     .lupaIcon {
-      /* position: relative;
-      left: 955px;
-      top: -27px; */
+      position: absolute;
+      right: 32px;
+      top: 9px;
     }
 
     & input {

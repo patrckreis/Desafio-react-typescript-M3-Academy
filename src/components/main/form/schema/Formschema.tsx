@@ -1,5 +1,7 @@
 import * as Yup from "yup";
 import "yup-phone";
+import { validateCPF, validatePhone } from "validations-br";
+import { parse, isDate } from "date-fns";
 
 export default Yup.object().shape({
   Nome: Yup.string()
@@ -13,9 +15,18 @@ export default Yup.object().shape({
       /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
       "Email inválido."
     ),
-  CPF: Yup.number().required("*Campo Obrigatório"),
-  Nascimento: Yup.date().required("*Campo Obrigatório"),
-  /* .min(new Date(), "Não é possível incluir uma data que já passou.") */
+  CPF: Yup.string()
+    .required("* Campo obrigatório.")
+    .test("test-cpf", "* CPF inválido.", (cpf) => {
+      if (cpf) {
+        return validateCPF(cpf);
+      } else {
+        return false;
+      }
+    }),
+  Nascimento: Yup.date()
+    .required("*Campo Obrigatório")
+    .typeError("Data de nascimento inválida"),
   Telefone: Yup.string()
     .required("*Campo Obrigatório")
     .phone(undefined, false, "Número de telefone inválido"),

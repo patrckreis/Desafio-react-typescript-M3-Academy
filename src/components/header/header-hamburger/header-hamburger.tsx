@@ -22,10 +22,7 @@ export function HeaderHamburger({ openModal }: HamburgerProps) {
       </div>
       <div className={style.headerHamburgerPlaceholder}>
         <input type="text" placeholder="Buscar..." />
-        <a href="/">
-          {" "}
-          <img className={style.lupaIcon} src={lupa} alt=""></img>
-        </a>
+        <img className={style.lupaIcon} src={lupa} alt=""></img>
       </div>
     </div>
   );

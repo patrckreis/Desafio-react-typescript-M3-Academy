@@ -1,6 +1,7 @@
 import React from "react";
 import Modal from "react-modal";
 import style from "./menu-aberto.module.scss";
+import close from "../assets/close.png";
 
 interface MenuHamburgerProps {
   isOpen: boolean;
@@ -16,7 +17,15 @@ export function MenuAberto({ isOpen, onRequestClose }: MenuHamburgerProps) {
       className={style.menuModal}
       ariaHideApp={false}
     >
-      <h1 className={style.cscs}>Hello World</h1>
+      <div className={style.modalOpen}>
+        <span>ENTRAR</span>
+        <img src={close} alt="" />
+      </div>
+      <div className={style.menu}>
+        <span>CURSOS</span>
+        <span>SAIBA MAIS</span>
+        <span>INSTITUCIONAL</span>
+      </div>
     </Modal>
   );
 }
