@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Desafio-react-typescript-M3-Academy/static/css/main.413a90d0.css",
+    "main.js": "/Desafio-react-typescript-M3-Academy/static/js/main.6ab7b66b.js",
+    "index.html": "/Desafio-react-typescript-M3-Academy/index.html",
+    "main.413a90d0.css.map": "/Desafio-react-typescript-M3-Academy/static/css/main.413a90d0.css.map",
+    "main.6ab7b66b.js.map": "/Desafio-react-typescript-M3-Academy/static/js/main.6ab7b66b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.413a90d0.css",
+    "static/js/main.6ab7b66b.js"
+  ]
+}
