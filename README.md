@@ -1,6 +1,5 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este projeto foi um desafio para a capacitação da M3 Academy. O desafio consistia em criar uma Página institucional com React e TypeScript utilizando como base um layout fornecido no Figma. Como este foi um projeto prático e avaliativo, decidi não fazer alterações após a conclusão. Recebi uma nota final de 80/100. 
+Layout do figma: https://www.figma.com/file/InxrgLIg90Y6KkPp8kiQyp/Desafio-Institucional-React.js-(Copy)?node-id=0-1&t=oNrPNRLMBXn8sJUD-0
 
 ## Available Scripts
 
